@@ -1,0 +1,379 @@
+<resources>
+    <string name="shared_preferences">com.clikfin.clikfinapplication</string>
+    <string name="user_auth_token">x-clikfin-auth-token</string>
+    <string name="default_notification_channel_id">ClikFin Channel</string>
+    <string name="user_id">userId</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">User Email</string>
+    <string name="user_mobile">User Mobile</string>
+    <string name="loan_application_id">applicationId</string>
+    <string name="loan_application_status">Loan Status</string>
+    <string name="user_on_board">is user onBoard</string>
+    <string name="app_name">ClikFin</string>
+    <string name="signup">Not account yet ? Create One</string>
+    <string name="Open">Open</string>
+    <string name="Close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internal_storage">internal_storage</string>
+    <string name="usepersonal">Our app collects user account data which includes email address, name to log in the app. This information
+is required as part of registration process to access our service and it is also used to auto populate relevant fields in the course of interface of
+our app. Our app also collects mobile number for verification to check the active SIM status of the device, uniquely identify you and prevent
+fraud and unauthorized access.
+</string>
+    <string name="finacialsms">We collect and monitor only your non personal sms related to bank transactions, names of the transacting parties, 0
+description of transaction and amount of transaction for the purpose of performing credit risk assessment. No personal sms data is collected,
+stored.</string>
+    <string name="contacts">As part of the loan journey, we collect all of your phone contacts which includes their contact names, phone number, account
+types and labels to enrich your financial profile. We use this data to determine your social network from your phonebook contacts and identify
+fraudulent contacts in your network. This helps us in detecting fraud loan application and reducing credit risk.</string>
+    <string name="location">We collect and monitor the information about the location of your device to provide serviceability of your loan application, to
+reduce the risk associated with your loan application and to provide pre-approved customized loan offers. This also helps us to verify the
+address, make a better credit risk decision and expedite your KYC process.</string>
+    <string name="installapp">– We collect each installed applications metadata information, which includes the application name, package name,
+installed time, updated time, version name and version code of each installed application on your device to assess your credit worthiness by
+analyzing the type of apps you use and provide you with pre approved customized loans.</string>
+    <string name="phone">Our app collects and monitors specific information about your device including your hardware model, RAM, storage, IMEI, serial
+number, SSAID, SIM information that includes network operator, roaming state, MNC and MCC codes, Wi-Fi information that includes MAC
+address and mobile network information to uniquely identify the device and ensure that no unauthorized device acts on your behalf to prevent
+fraud. This also helps us in enriching your credit profile and assess your creditworthiness.</string>
+    <string name="camera">We need your camera access to capture your selfie for identify verification and collection of scanned documents for KYC process</string>
+    <string name="storageread">With this permission, you will be able to upload the documents for completing the KYC process for a faster approval and
+disbursal of loan. This helps in providing a smoother and seamless experience while using the application.</string>
+
+
+    //about us
+    <string name="ph1">ClikFin is an innovative, user-friendly, and scalable digital money lending platform for instant personal loans. Our platform  <b>offers quickest cash loans to a self-employed or a salaried user</b> with minimal documents and basic details.</string>
+    <string name="ph2">Our primary aim is to ease customers’ financial hurdles and make funds instantly accessible to all customers who are in financial need. Our leading digital platform turns the tedious, time-taking, and cumbersome conventional loan origination process into a 5-minutes, seamless, and frictionless process. </string>
+    <string name="ph3">Our team at ClikFin strives continuously to deliver the most hassle-free money borrowing experience to customers. Our platform, both web-based and mobile application, is designed in a consumer-friendly fashion to provide personal financing services with just a few clicks. We are committed to providing a flexible and affordable loan in the shortest possible time, thereby bringing you one step closer to accomplishing your personal financial requirements or goals.</string>
+
+    <string name="ob_header1">Credit Score</string>
+    <string name="ob_desc1">Get your credit score free of cost at all the time from anywhere</string>
+    <string name="scrolling_disc_1">Instant Loan, Paperless Process</string>
+    <string name="scrolling_disc_2">Free Credit Report,Coming Soon</string>
+    <string name="scrolling_header_1">Instant Loan</string>
+    <string name="scrolling_header_2">Save 1200 Now</string>
+    <string name="scrolling_header_3">scrolling header 3</string>
+
+    <string name="ob_get_started">Get Started</string>
+    <string name="ob_header2">Offers</string>
+    <string name="ob_desc2">Customized offers at all time from anywhere, easy to get. Check it Now.</string>
+    <string name="ob_header3">Instant Loan</string>
+    <string name="ob_desc3">Get Loans in 3 easy steps, paper less, hassle free loans from your phone</string>
+    <string name="password_digits">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890._!@#$%^*()</string>
+    <string name="digits_number">0123456789</string>
+    <string name="digits_email">QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890@_.</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="register_now"><u>New user? Register here</u></string>
+    <string name="register">Register</string>
+    <string name="by_proceeding_you_agree_to_clikfin_privacy_policy_and_authorize">By proceeding, you agree to ClikFin Privacy Policy,and authorize us to retrieve your credit report and communicate with you through Phone, SMS,Emails, WhatsApp etc.</string>
+    <string name="contact_number">Contact number</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="check_now">Check Now</string>
+    <string name="refer_now">Refer Now</string>
+    <string name="search">Search</string>
+
+    <string name="name_empty_error">Please enter your name</string>
+    <string name="valid_mobile_number_msg">Please enter valid mobile number</string>
+    <string name="contact_number_empty_error">Please enter a contact number</string>
+    <string name="contact_number_length_error">Contact number should contain 10 characters</string>
+    <string name="contact_number_invalid_error">Contact number is invalid</string>
+    <string name="email_empty_error">Please provide your e-mail</string>
+    <string name="email_invalid_error">Please provide a valid e-mail</string>
+    <string name="password_empty_error">Please enter a password</string>
+    <string name="password_length_error">Password should contain 8 characters</string>
+    <string name="re_password_empty_error">Please re-enter your password</string>
+    <string name="re_password_mismatch_error">Passwords do not match</string>
+    <string name="invalid_credentials">The username and password provided seems incorrect</string>
+    <string name="user_already_registered">The specified user already exists</string>
+    <string name="invalid_registration_input">Please check the input provided</string>
+
+    <string name="server_error">Seems like we are facing some issue. Please try again in some time</string>
+    <string name="internet_connectivity_issue">Please check your internet connection and try again</string>
+
+    <string name="server_unreachable">You appear to be offline , please check your internet connectivity</string>
+    <string name="email_id">Email id</string>
+    <string name="full_name">Full name</string>
+    <string name="re_enter_password">Re-enter Password</string>
+
+    //Employment Info fragmeny
+    <string name="tv_employment_type">Employee Type</string>
+    <string name="tv_mode_of_salary">Mode Of Salary</string>
+    <string name="tv_loan_application">Loan Application</string>
+    <string name="tv_company_name">Company Name*</string>
+    <string name="tv_designation">Designation*</string>
+    <string name="tv_marital_status">Marital Status*</string>
+    <string name="tv_current_residency">Current Residency</string>
+    <string name="ed_designation_exp">Designation</string>
+    <string name="tv_current_work_exp">Current Work Experience *</string>
+    <string name="tv_total_work_exp">Total Work Experience *</string>
+    <string name="ed_company_name">Company Name</string>
+    <string name="tv_Salary">Salary*</string>
+    <string name="ed_salary">Salary Min 15000 </string>
+    <string name="ed_current_work_exp">Current Work Experience</string>
+    <string name="ed_total_work_exp">Total Work Experience</string>
+    <string name="tv_official_email_id">Official Email Id*</string>
+    <string name="ed_official_email_id">Official Email id</string>
+    <string name="tv_official_address">Official Address</string>
+    <string name="tv_line1">Line 1*</string>
+    <string name="ed_line1">Line 1</string>
+    <string name="tv_line2">Line 2*</string>
+    <string name="ed_line2">Line 2</string>
+    <string name="tv_land_mark">Land Mark*</string>
+    <string name="ed_land_mark">Land Mark</string>s
+    <string name="tv_city">City*</string>
+    <string name="ed_city">City</string>
+    <string name="tv_state">State*</string>
+    <string name="ed_state">State</string>
+    <string name="tv_pin">Pin code*</string>
+    <string name="ed_pin">Pin Code</string>
+    <string name="tv_land_line_no">LandLine Number*</string>
+    <string name="ed_land_line_no">Office Contact Number</string>
+    <string name="tv_loan_amount">Loan Amount*</string>
+    <string name="ed_loan_amount">Loan Amount Min 20000</string>
+    <string name="tv_tenure">Tenure</string>
+    <string name="tv_previous_loan">Details Of Previous Loan</string>
+    <string name="tv_previous_loan_amount">Previous Loan Amount</string>
+    <string name="ed_previous_loan_amount">Previous Loan Amount</string>
+    <string name="tv_monthly_emi">Monthly EMI</string>
+    <string name="ed_monthly_emi_amount">Monthly EMI</string>
+    <string name="tv_financier_name">Financier Name</string>
+    <string name="ed_financier_name">Financier Name</string>
+    <string name="tv_office_no">Office Number</string>
+    <string name="btn_next">Next</string>
+    //Basic info Fragment
+    <string name="tv_first_name">First Name*</string>
+    <string name="tv_last_name">Last Name*</string>
+    <string name="tv_father_name">Father Name*</string>
+    <string name="tv_middle_name">Middle Name*</string>
+    <string name="tv_mother_name">Mother Name*</string>
+    <string name="tv_spouse_name">Spouse Name*</string>
+    <string name="ed_name_as_pan">First Name As Per PAN</string>
+    <string name="ed_last_name_as_pan">Last Name As Per PAN</string>
+    <string name="ed_father_name_as_pan">Father Name As Per PAN</string>
+    <string name="ed_middle_name_as_pan">Middle Name As Per PAN</string>
+    <string name="ed_mother_name_as_pan">Mother Name As Per PAN</string>
+    <string name="ed_spouse_name_as_pan">Spouse Name As Per PAN</string>
+    <string name="tv_contact_no">Contact No*</string>
+    <string name="ed_contact_no">Contact No</string>
+    <string name="otp">OTP</string>
+    <string name="tv_email_id">Email Id*</string>
+    <string name="ed_email_id">Email Id</string>
+    <string name="tv_aadhar_card">Aadhar Card*</string>
+    <string name="tv_no_of_years_staying">No. Of Years Staying*</string>
+    <string name="ed_aadhar_card">Aadhar Card No</string>
+    <string name="ed_no_of_years_staying">No. Of Years Staying</string>
+    <string name="tv_pan_card">Pan Card*</string>
+    <string name="ed_pan_card_no">Pan Card No</string>
+    <string name="rd_male">Male</string>
+    <string name="rd_female">Female</string>
+    <string name="tv_DOB">Date of Birth</string>
+    <string name="ed_DOB">Enter Date of Birth</string>
+    <string name="rd_married">Married</string>
+    <string name="rd_unmarried">Single</string>
+    <string name="rd_rented">RENTED</string>
+    <string name="rd_owned">OWNED</string>
+    <string name="rd_other">Other</string>
+    <string name="tv_present_address">Current Address</string>
+    <string name="tv_permanent_address">Permanent Address</string>
+    <string name="ch_same_address">Same as Present Address</string>
+    <string name="tv_address_proof">Address Proof</string>
+    <string name="tv_educational_qualification">Educational Qualification*</string>
+    <string name="tv_organization_type">Organization Type*</string>
+    <string name="tv_loan_purpose">Loan Purpose*</string>
+
+    //side drawer menu
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_help">Help</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_t_a_c">Terms&amp;Conditions</string>
+    <string name="f_a_q">FAQ</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_our_partners">Our Partners</string>
+    //bottom navigation menu
+    <string name="bottom_navigation_item1">Item1</string>
+    <string name="bottom_navigation_item2">Item2</string>
+    <string name="bottom_navigation_item3">Item3</string>
+    <string name="bottom_navigation_item4">Item4</string>
+    <string name="bottom_navigation_item5">Item5</string>
+
+    <string name="refer_n_earn">Refer and Earn up to 25000/- Terms and condition apply</string>
+    //Document upload fragment
+    <string name="tv_reference1">Reference 1</string>
+    <string name="tv_reference2">Reference 2</string>
+    <string name="tv_name">Name*</string>
+    <string name="ed_name">Enter Name</string>
+    <string name="tv_relationship">Relationship*</string>
+    <string name="ed_relationship">Enter Relationship</string>
+    <string name="tv_doc_upload">Upload Documents</string>
+    <string name="tv_upload_aadhar_card">Upload Aadhar Card Document</string>
+
+
+    //bank deatils fragments
+    <string name="tv_ac_holder_name">Account Holder Name*</string>
+    <string name="ed_ac_holder_name">Account Holder Name</string>
+    <string name="tv_bank_name">Bank Name*</string>
+    <string name="tv_account_no">Account Number*</string>
+    <string name="ed_account_no">Account Number</string>
+    <string name="tv_re_enter_account_no">Re-Enter Account Number*</string>
+    <string name="ed_re_enter_account_no">Re-Enter Account Number</string>
+    <string name="tv_IFSC">IFSC Code*</string>
+    <string name="ed_IFSC">IFSC Code</string>
+    //bottom navigation menu
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_cibil_check">Cibil</string>
+    <string name="bottom_navigation_user_profile">User Profile</string>
+    <string name="bottom_navigation_emi_calculator">EMI Calculator</string>
+
+    <string name="input_field_empty">can not be empty</string>
+    <string name="total_exp_greater_error">Total Work Experience  Must Be Greater Than Current Work Experience </string>
+    <string name="ac_not_match">Account Numbers Are Not Matched</string>
+    <string name="file_size_error">Selected file is large ,please select file size less than 5MB</string>
+    <string name="file_format_error">Selected file format not supported, Please select file (png, jpg or jpeg) format</string>
+    <string name="select_address_proof">Please select address proof</string>
+    <string name="select_state">Please select state</string>
+    <string name="select_organization_type">Please select organization type</string>
+    <string name="select_loan_purpose">Please select loan purpose</string>
+    <string name="select_bank_name">Please Select Bank Name</string>
+    <string name="select_educational_qualification">Please select Educational Qualification</string>
+    <string name="select_mode_of_salary">Please select mode of salary</string>
+    <string name="select_tenure_period">Please select tenure period</string>
+    <string name="min_salary">Salary can not be less than 15K</string>
+    <string name="min_loan_amount">Loan amount can not be less than 20000</string>
+    <string name="upload_doc_msg">Please upload all documents</string>
+    <string name="references_pending_msg">Your loan application is under review</string>
+    <string name="rejected_msg">We regret to inform you that we will not be able to serve you, the details shared by you does not meet our internal lending criteria</string>
+    <string name="logged_out">You are Logged out...Please login again</string>
+    <string name="under_review_msg">Your loan application is under review. We will get back to you.</string>
+    <string name="disbursed_pending_msg">Your Loan Application Approved. Disbursement Is Pending</string>
+    <string name="disbursed_msg">Your Loan Application Approved. Disbursement Is Done</string>
+    //Loan application status
+    <string name="created">CREATED</string>
+    <string name="employee_details_pending">EMPLOYMENT DETAILS PENDING</string>
+    <string name="references_pending">REFERENCE PENDING</string>
+    <string name="bank_details_pending">BANK DETAILS PENDING</string>
+    <string name="documents_pending">DOCUMENTS PENDING</string>
+    <string name="under_review">UNDER_REVIEW</string>
+    <string name="disbursement_pending">DISBURSEMENT PENDING</string>
+    <string name="disbursed">DISBURSED</string>
+    <string name="rejected">REJECTED</string>
+
+    <string name="thank_you">Thank You</string>
+    <string name="congratulations">Congratulations</string>
+
+    //R_A_E
+    <string name="tv_referred_by">Referred by</string>
+    //Upload doc name
+    <string name="tv_upload_pan_card">Pan Card</string>
+    <string name="tv_current_residency_proof">Current Residency Proof</string>
+    <string name="tv_3_months_pay_slip">3 Months Pay Slip</string>
+    <string name="tv_pay_slip_1">Pay Slip</string>
+    <string name="tv_pay_slip_2">Pay Slip 2</string>
+    <string name="tv_pay_slip_3">Pay Slip 3</string>
+    <string name="tv_3_month_bank_statement">3 Months Bank Statements</string>
+    <string name="tv_bank_statement_1">Bank Statement</string>
+    <string name="tv_bank_statement_2">Bank Statement 2</string>
+    <string name="tv_bank_statement_3">Bank Statement 3</string>
+    <string name="tv_aadhar_front">Aadhar</string>
+    <string name="tv_aadhar_back">Adadhar Back</string>
+    <string name="tv_photo">Photo/Selfie</string>
+    <string name="tv_company_id">Company ID</string>
+
+    <string name="isUpload_upload_pan_card">isUpload_upload_pan_card</string>
+    <string name="isUpload_current_residency_proof">isUpload_current_residency_proof</string>
+    <string name="isUpload_pay_slip_1">isUpload_pay_slip_1</string>
+    <string name="isUpload_pay_slip_2">isUpload_pay_slip_2</string>
+    <string name="isUpload_pay_slip_3">isUpload_pay_slip_3</string>
+    <string name="isUpload_bank_statement_1">isUpload_bank_statement_1</string>
+    <string name="isUpload_bank_statement_2">isUpload_bank_statement_2</string>
+    <string name="isUpload_bank_statement_3">isUpload_bank_statement_3</string>
+    <string name="isUpload_aadhar_front">isUpload_aadhar_front</string>
+    <string name="isUpload_aadhar_back">isUpload_aadhar_back</string>
+    <string name="isUpload_photo">isUpload_photo</string>
+    <string name="isUpload_company_id">isUpload_company_id</string>
+
+
+    <string name="isMandatory_upload_pan_card">isMandatory_upload_pan_card</string>
+    <string name="isMandatory_current_residency_proof">isMandatory_current_residency_proof</string>
+    <string name="isMandatory_pay_slip_1">isMandatory_pay_slip_1</string>
+    <string name="isMandatory_pay_slip_2">isMandatory_pay_slip_2</string>
+    <string name="isMandatory_pay_slip_3">isMandatory_pay_slip_3</string>
+    <string name="isMandatory_bank_statement_1">isMandatory_bank_statement_1</string>
+    <string name="isMandatory_bank_statement_2">isMandatory_bank_statement_2</string>
+    <string name="isMandatory_bank_statement_3">isMandatory_bank_statement_3</string>
+    <string name="isMandatory_aadhar_front">isMandatory_aadhar_front</string>
+    <string name="isMandatory_aadhar_back">isMandatory_aadhar_back</string>
+    <string name="isMandatory_photo">isMandatory_photo</string>
+    <string name="isMandatory_company_id">isMandatory_company_id</string>
+    //upload doc type
+
+    <string name="uploaded_image_pan">Uploaded_Image_Pan</string>
+    <string name="uploaded_image_aadhaar_front">Uploaded_Image_Aadhaar_Front</string>
+    <string name="uploaded_image_aadhaar_back">Uploaded_Image_Aadhaar_Back</string>
+    <string name="uploaded_image_photo">Uploaded_Image_Aadhaar_photo</string>
+    <string name="uploaded_image_company_id">Uploaded_Image_Company_Id</string>
+    <string name="uploaded_image_residency_proof">Uploaded_Image_Residency_Proof</string>
+
+
+    <string name="doc_current_residency_proof">CURRENT_ADDRESS_PROOF</string>
+    <string name="doc_upload_pan_card">PAN_CARD</string>
+    <string name="doc_pay_slip_1">PAY_SLIP_1</string>
+    <string name="doc_pay_slip_2">PAY_SLIP_2</string>
+    <string name="doc_pay_slip_3">PAY_SLIP_3</string>
+
+    <string name="doc_bank_statement_1">BANK_STATEMENT_1</string>
+    <string name="doc_bank_statement_2">BANK_STATEMENT_2</string>
+    <string name="doc_bank_statement_3">BANK_STATEMENT_3</string>
+    <string name="doc_aadhar_front">AADHAAR_CARD_FRONT</string>
+    <string name="doc_aadhar_back">AADHAAR_CARD_BACK</string>
+    <string name="doc_photo">PHOTO</string>
+    <string name="doc_company_id">COMPANY_ID</string>
+
+    <string name="is_doc_upload">Document Upload Successfully...</string>
+    <string name="tv_upload_doc_msg">Please select PDF file only</string>
+    <string name="tv_upload_image_doc_msg">Please select Image file only</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="btn_upload">Upload</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_select_file">Select File</string>
+    <string name="btn_submit">Submit</string>
+    <string name="tv_gender">Gender:</string>
+    <string name="ed_years">Years</string>
+    <string name="ed_months">Months</string>
+    <string name="tv_apply_loan">Apply for Loan</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_personal_info">Personal Information</string>
+    <string name="title_employee_info">Employee Information</string>
+    <string name="title_references">References</string>
+    <string name="title_bank_details">Bank Details</string>
+    <string name="title_upload_documents">Upload Documents</string>
+
+    <string name="title_about_us">About Us</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="title_help">Help</string>
+    <string name="title_support">Support</string>
+    <string name="title_terms_and_conditions">Terms And Conditions</string>
+    <string name="title_f_a_q">FAQ</string>
+
+
+    <string name="title_cibil">Cibil Check</string>
+    <string name="title_profile">User Profile</string>
+    <string name="title_emi_calculator">EMI Calculator</string>
+    <string name="title_refer_and_earn">Refer And Earn</string>
+
+    <string name="ed_password">Enter Password</string>
+    //LoginWithMobileNumber Fragment
+    <string name="login_to_continue">Login to continue</string>
+    <string name="tv_register_mob_no">Enter your register mobile number</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="otp_send">We have sent verification code to your mobile number</string>
+    <bool name="is_login_with_mobile_number">false</bool>
+
+
+</resources>

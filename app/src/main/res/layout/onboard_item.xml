@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/info_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/info_header"
+        android:layout_gravity="center_horizontal"
+
+        android:gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/info_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/info_description"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/double_general_padding_margin"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="0sp"
+        android:textColor="@color/instant_loan_color"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        tools:text="Credit Score" />
+
+    <TextView
+        android:id="@+id/info_description"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:layout_marginBottom="@dimen/input_field_margin"
+        android:lineSpacingExtra="2.4sp"
+        android:text="@string/ob_desc1"
+        android:textAlignment="center"
+        android:textColor="@color/input_color"
+        android:textSize="@dimen/small_text" />
+
+
+</RelativeLayout>

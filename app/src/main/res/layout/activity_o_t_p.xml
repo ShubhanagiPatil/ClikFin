@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/input_field_margin"
+    android:background="@drawable/border"
+    android:elevation="5dp"
+    android:padding="@dimen/general_padding_margin">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        style="@style/Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/double_general_padding_margin"
+        android:text="@string/verify_otp"
+        android:textColor="@color/splash_color"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+        android:id="@+id/tvRegMobNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:text="@string/otp_send"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/tvEditMobNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRegMobNo"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:text="Edit Mobile Number"
+        android:textColor="@color/splash_color"
+        android:textSize="@dimen/small_text" />
+
+    <EditText
+        android:id="@+id/edOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEditMobNo"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:background="@drawable/border"
+        android:elevation="5dp"
+        android:hint="@string/otp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="@dimen/input_field_padding" />
+
+    <TextView
+        android:id="@+id/tvVerifyOTPError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edOTP"
+        android:padding="@dimen/text_margin_left"
+        android:text="errrrrr"
+        android:textColor="@color/error"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layOTPTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVerifyOTPError"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OTP will expire in "
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/tvOTPTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/general_padding_margin"
+            android:text="20"
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:text="Sec"
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/small_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layResendOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layOTPTimer"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/resendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Resend OTP"
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/small_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layResendOTP"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnVerifyOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_blue"
+            android:foregroundGravity="center_horizontal"
+            android:paddingStart="@dimen/double_general_padding_margin"
+            android:paddingEnd="@dimen/double_general_padding_margin"
+            android:text="@string/verify_otp"
+            android:textAllCaps="false"
+            android:textColor="@color/splash_color" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/input_field_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_name"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_r_a_e_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:hint="@string/ed_name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/r_a_e_Name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_contact_no"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_r_a_e_ContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:hint="@string/ed_contact_no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/r_a_e_ContactNo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_city"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_r_a_e_City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:hint="@string/ed_city"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/r_a_e_City_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/input_field_margin"
+            android:text="@string/tv_referred_by"
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/small_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_name"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edReferredByName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:hint="@string/ed_name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/referredByName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_contact_no"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edReferredByContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:hint="@string/ed_contact_no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/referredByContactNo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btnReferenceInfoNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/double_general_padding_margin"
+            android:background="@drawable/custom_rect"
+            android:text="@string/btn_submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "345595600696",
+    "firebase_url": "https://clikfin---android.firebaseio.com",
+    "project_id": "clikfin---android",
+    "storage_bucket": "clikfin---android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345595600696:android:d81e2d6ed6645b04a8ebcd",
+        "android_client_info": {
+          "package_name": "com.clikfin.clikfinapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345595600696-tkhacuq9mbdlea4vg4f78erd7dlr43i9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clikfin.clikfinapplication",
+            "certificate_hash": "a20dbb07ecb66495eb183cc6dedf31928644865c"
+          }
+        },
+        {
+          "client_id": "345595600696-nn4duo8jopi5s10am1gvsr8fmv48njjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtfwDi_kKCCW76mATTvBCBwYUq1p4DY7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345595600696-nn4duo8jopi5s10am1gvsr8fmv48njjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

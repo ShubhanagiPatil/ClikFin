@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/input_field_margin"
+    android:background="@drawable/border"
+    android:elevation="5dp"
+    android:padding="@dimen/general_padding_margin">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        style="@style/Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/double_general_padding_margin"
+        android:text="@string/login_to_continue"
+        android:textColor="@color/splash_color"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+        android:id="@+id/tvRegMobNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:text="@string/tv_register_mob_no"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/small_text" />
+
+    <EditText
+        android:id="@+id/edOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRegMobNo"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:background="@drawable/border"
+        android:elevation="5dp"
+        android:hint="@string/ed_contact_no"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="@dimen/input_field_padding"
+        android:textColor="@color/splash_color" />
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edOTP"
+        android:layout_marginTop="@dimen/cta_button_height"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnGetOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_blue"
+            android:foregroundGravity="center_horizontal"
+            android:elevation="5dp"
+            android:paddingStart="@dimen/double_general_padding_margin"
+            android:textAllCaps="false"
+            android:paddingEnd="@dimen/double_general_padding_margin"
+            android:text="Get OTP"
+            android:textColor="@color/splash_color" />
+    </LinearLayout>
+
+
+</RelativeLayout>

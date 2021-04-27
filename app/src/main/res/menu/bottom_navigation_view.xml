@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_navigation_dashboard"
+        android:icon="@drawable/bottom_nav_item_home"
+        android:title="@string/bottom_navigation_home"/>
+    <item
+        android:id="@+id/bottom_navigation_cibil_check"
+        android:icon="@drawable/bottom_nav_item_cibil"
+        android:title="@string/bottom_navigation_cibil_check"/>
+    <item
+        android:id="@+id/bottom_navigation_user_profile"
+        android:icon="@drawable/bottom_nav_item_user"
+        android:title="@string/bottom_navigation_user_profile"/>
+    <item
+        android:id="@+id/bottom_navigation_emi_cal"
+        android:icon="@drawable/bottom_nav_item_eligibility_cal"
+        android:title="@string/bottom_navigation_emi_calculator"/>
+
+
+</menu>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/dashboard_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_above="@+id/bottom_navigation">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/scrollingViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_below="@+id/scrollingViewpager"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/apply_loan"
+        android:layout_width="match_parent"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollingViewpager"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/tv_apply_loan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/btn_apply_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/apply_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/path_46018" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:paddingBottom="@dimen/input_field_margin"
+                android:src="@drawable/group_28" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cibil_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/ob_desc1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/btn_check_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/check_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/ic_cibil" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/refer_and_earn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/input_field_margin"
+        android:layout_weight="0.33"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:elevation="@dimen/elevation"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/refer_n_earn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/btn_refer_and_earn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/refer_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/refer_and_earn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>
+

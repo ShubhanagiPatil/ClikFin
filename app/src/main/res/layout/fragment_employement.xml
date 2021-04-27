@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/input_field_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/input_field_margin">
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/input_field_margin"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_user" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_employment_type"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/empTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/splash_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/employeeTypeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_company_name"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_company_name"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/companyNameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_organization_type"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerOrganizationType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/organizationTypeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_edit" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_designation"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_designation_exp"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/designationExpError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <EditText
+            android:id="@+id/edCurrentWorkExpYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_current_work_exp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/currentWorkExpError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <EditText
+            android:id="@+id/edTotalWorkExpYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_total_work_exp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/input_field_margin"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/totalWorkExpError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_official_email_id"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edOfficialEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_official_email_id"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officialEmailIdError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_sms" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="15dp"
+                  android:text="@string/tv_mode_of_salary"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerModeOfSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/splash_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/modeOfSalaryError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_Salary"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:drawableEnd="@drawable/ic_rupee"
+            android:elevation="5dp"
+            android:hint="@string/ed_salary"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/salaryError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_official_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/input_field_margin"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_installed" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_line1"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edOfficeAddressLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_line1"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officeAddressLine1Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_installed" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_line2"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edOfficeAddressLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_line2"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officeAddressLine2Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_installed" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_land_mark"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edOfficeAddressLandMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_land_mark"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officeAddressLandMarkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_installed" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_city"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edOfficeAddressCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_city"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officeAddressCityError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_state"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerOfficeAddressState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/officeAddressStateError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_installed" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_pin"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edOfficeAddressPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_pin"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officeAddressPinCodeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_call" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_office_no"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edOfficePhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:drawableEnd="@drawable/ic_call"
+            android:elevation="5dp"
+            android:hint="@string/ed_land_line_no"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/officePhoneNumberError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_loan_purpose"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerLoanPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loanPurposeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_loan_amount"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edApplyLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:drawableEnd="@drawable/ic_rupee"
+            android:elevation="5dp"
+            android:hint="@string/ed_loan_amount"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/applyLoanAmountError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_user" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_tenure"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/tenureSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/splash_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tenureError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_previous_loan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/input_field_margin"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_previous_loan_amount"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPreviousLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:drawableEnd="@drawable/ic_rupee"
+            android:elevation="5dp"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:hint="@string/ed_previous_loan_amount"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/previousLoanAmountError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_monthly_emi"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPreviousMonthlyEMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:drawableEnd="@drawable/ic_rupee"
+            android:elevation="5dp"
+            android:hint="@string/ed_monthly_emi_amount"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/previousMonthlyEMIError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/input_field_margin"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_financier_name"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edLoanFinancierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_financier_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/loanFinancierNameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/double_general_padding_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:enabled="false"
+            android:text="@string/btn_next"
+            android:textColor="@color/splash_color" />
+    </LinearLayout>
+
+</ScrollView>

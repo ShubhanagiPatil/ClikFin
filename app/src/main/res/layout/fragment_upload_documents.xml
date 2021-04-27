@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/input_field_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="vertical"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPanUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/tv_upload_pan_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload PAN photo"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPanUpload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_upload" />
+
+                <TextView
+                    android:id="@+id/tvIsPanMandatory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Front"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAadharUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_aadhar_front"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Aadhar card both side"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layImgAadharFrontUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAadharFrontUpload"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIsAadharFrontMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Front"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/input_field_margin"
+                    android:layout_toRightOf="@+id/layImgAadharFrontUpload"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAadharBackUpload"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIsAadharBackMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Back"
+
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:id="@+id/tvAadharFrontUpload"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="@dimen/input_field_margin"
+                 android:text="@string/tv_aadhar_front"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+
+             <ImageView
+                 android:id="@+id/imgAadharFrontUpload"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:padding="@dimen/input_field_padding"
+                 android:src="@drawable/plus" />
+         </RelativeLayout>-->
+
+        <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_margin="@dimen/input_field_margin"
+               android:background="@color/grey" />-->
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/tvAadharBackUpload"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/input_field_margin"
+                  android:text="@string/tv_aadhar_back"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+
+              <ImageView
+                  android:id="@+id/imgAadharBackUpload"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentEnd="true"
+                  android:padding="@dimen/input_field_padding"
+                  android:src="@drawable/plus" />
+          </RelativeLayout>-->
+
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_margin="@dimen/input_field_margin"
+             android:background="@color/grey" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/input_field_padding">
+
+                <TextView
+                    android:id="@+id/tvResidencyProofUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/tv_current_residency"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_current_residency_proof"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgResidencyProofUpload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_upload" />
+
+                <TextView
+                    android:id="@+id/tvIsResidencyProofMandatory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Front"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBankStatementUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/tv_bank_statement_1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="upload last 3 months bank statements"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layBankState1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_1MonthsBankStateUpload"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs1MonthsBankStateMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Stat. 1"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layBankState2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/input_field_margin"
+                    android:layout_toRightOf="@+id/layBankState1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_2MonthsBankStateUpload"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs2MonthsBankStateMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Stat. 2"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/input_field_margin"
+                    android:layout_toRightOf="@+id/layBankState2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_3MonthsBankStateUpload"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs3MonthsBankStateMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Stat. 3"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPaySlip"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_pay_slip_1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="upload last 3 months pay slips"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layImgPay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img1MonthPaySlip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs1MonthPaySlipMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Slip 1"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layImgPay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/input_field_margin"
+                    android:layout_toRightOf="@+id/layImgPay1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img2MonthPaySlip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs2MonthPaySlipMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Slip 2"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/input_field_margin"
+                    android:layout_toRightOf="@+id/layImgPay2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img3MonthPaySlip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:id="@+id/tvIs3MonthPaySlipMandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Slip 3"
+                        android:textColor="@color/input_color"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/input_field_padding">
+
+                <TextView
+
+                    android:id="@+id/tvPhotoUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_photo"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload your photo/selfie"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPhotoUpload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_upload" />
+
+                <TextView
+                    android:id="@+id/tvIsPhotoUploadMandatory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Photo"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/input_field_margin"
+              android:background="@drawable/border"
+              android:elevation="5dp"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+
+                  android:layout_weight="0.3"
+                  android:orientation="vertical"
+                  android:padding="@dimen/input_field_padding">
+
+                  <TextView
+
+                      style="@style/Regular"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tv_photo"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/small_text" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="upload your photo/selfie"
+                      android:textColor="@color/input_color"
+                      android:textSize="@dimen/text_size" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="0.7"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+                  <ImageView
+                      android:id="@+id/imgPhotoUpload"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_upload" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Front"
+                      android:textColor="@color/input_color"
+                      android:textSize="@dimen/text_size" />
+
+              </LinearLayout>
+
+
+          </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/input_field_padding">
+
+                <TextView
+                    android:id="@+id/tvCompanyIDUpload"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_company_id"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload your company ID"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCompanyIDUpload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_upload" />
+
+                <TextView
+                    android:id="@+id/tvIsCompanyIDUploadMandatory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ID"
+                    android:textColor="@color/input_color"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnUploadDocDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/double_general_padding_margin"
+            android:background="@drawable/custom_rect"
+            android:text="Done"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/general_padding_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/input_field_padding"
+        android:text="@string/upload_document"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvUploadDocName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:gravity="center"
+        android:textColor="@color/splash_color"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/tvUploadDocMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:gravity="center"
+        android:textColor="@color/error"
+        android:textSize="@dimen/text_size" />
+
+    <CheckBox
+        android:id="@+id/chkFilePassword"
+        android:visibility="gone"
+        android:text="Password Protected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+
+
+    <EditText
+        android:id="@+id/edFilePassword"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:hint="@string/ed_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/input_field_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:src="@drawable/camera" />
+
+        <Button
+            android:id="@+id/btnSelectFileToUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_rect"
+            android:text="@string/btn_select_file"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUploadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_rect"
+            android:text="@string/btn_upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancelFileToUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_rect"
+            android:text="@string/btn_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

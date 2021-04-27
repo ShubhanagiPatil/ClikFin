@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:title="@string/nav_privacy_policy"
+            android:icon="@drawable/privacy_policy"/>
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="@string/nav_about_us"
+            android:icon="@drawable/about_us"/>
+        <!--  <item
+              android:id="@+id/nav_settings"
+              android:title="@string/nav_setting"
+              android:icon="@drawable/setting"/>
+  -->
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/nav_help"
+            android:icon="@drawable/help"/>
+        <item
+            android:id="@+id/nav_support"
+            android:title="@string/nav_support"
+            android:icon="@drawable/support"/>
+      <!--  <item
+            android:id="@+id/nav_share"
+            android:title="@string/nav_share"
+            android:icon="@drawable/share"/>-->
+        <item
+            android:id="@+id/nav_t_a_c"
+            android:title="@string/nav_t_a_c"
+            android:icon="@drawable/t_a_c"/>
+        <item
+            android:id="@+id/nav_f_a_q"
+            android:title="@string/f_a_q"
+            android:icon="@drawable/f_a_q"/>
+        <item
+            android:id="@+id/nav_our_partners"
+            android:title="@string/nav_our_partners"
+            android:icon="@drawable/ic_our_partners"/>
+
+    </group>
+    <!-- <group>
+
+     </group>
+ -->
+
+</menu>

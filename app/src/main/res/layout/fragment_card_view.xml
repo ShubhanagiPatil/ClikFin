@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/input_field_margin"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layPersonalView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/personalView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_below="@+id/personalView"
+            android:text="Basic Info" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_alignBaseline="@+id/personalView"
+            android:layout_toRightOf="@id/personalView"
+            android:layout_weight="0.1"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layEmployeeView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layPersonalView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/employeeView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_below="@+id/employeeView"
+            android:text="Employee Info" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_alignBaseline="@+id/employeeView"
+            android:layout_toRightOf="@id/employeeView"
+            android:layout_weight="0.1"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layReferenceView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layEmployeeView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/referenceView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_below="@+id/referenceView"
+            android:text="Reference Info" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_alignBaseline="@+id/referenceView"
+            android:layout_toRightOf="@id/referenceView"
+            android:layout_weight="0.1"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layBankView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layReferenceView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bankView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bankView"
+            android:textSize="@dimen/text_size"
+            android:text="Bank Info" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_alignBaseline="@+id/bankView"
+            android:layout_toRightOf="@id/bankView"
+            android:layout_weight="0.1"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layDocView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layBankView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/docView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/docView"
+            android:textSize="@dimen/text_size"
+            android:text="Document Info" />
+
+    </RelativeLayout>
+
+
+    <!-- <TextView
+         android:id="@+id/EmployeeView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0.1"
+         android:background="@drawable/circle_grey" />
+
+     <View
+         android:layout_width="wrap_content"
+         android:layout_height="1dp"
+         android:layout_weight="0.1"
+         android:background="@color/black" />
+ -->
+</RelativeLayout>

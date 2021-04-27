@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:layout_margin="@dimen/input_field_margin"
+    android:background="@drawable/border"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLoanAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount"
+                android:textSize="@dimen/small_text"
+                android:layout_margin="10dp"/>
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:max="1000000"
+                android:theme="@style/SeekBarColor"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edLoanAmount"
+            android:labelFor="@+id/tvLoanAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text=""
+            android:textSize="@dimen/small_text"
+            android:padding="@dimen/input_field_padding"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/input_field_margin"
+            android:layout_marginRight="@dimen/input_field_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLoanMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Period (in month) "
+                android:textSize="@dimen/small_text"
+                android:layout_margin="10dp"/>
+            <SeekBar
+                android:id="@+id/monthBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:max="36"
+                android:theme="@style/SeekBarColor"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edLoanmonth"
+            android:labelFor="@+id/tvLoanMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text=""
+            android:textSize="@dimen/small_text"
+            android:padding="@dimen/input_field_padding"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/input_field_margin"
+            android:layout_marginRight="@dimen/input_field_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROI (%) "
+            android:textSize="@dimen/small_text"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/tvroi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text=""
+            android:textSize="@dimen/small_text"
+            android:hint="Enter ROI (%)"
+            android:padding="@dimen/input_field_padding"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/input_field_margin"
+            android:layout_marginRight="@dimen/input_field_margin"/>
+
+        <Button
+            android:id="@+id/btnEMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_rect"
+            android:text="Find EMI"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/emiTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:textColor="@color/splash_color"
+            android:textSize="@dimen/medium_text"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

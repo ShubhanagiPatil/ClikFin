@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="@dimen/input_field_margin"
+    android:orientation="horizontal"
+    android:background="@drawable/background_oval">
+
+    <LinearLayout
+        android:id="@+id/scrollingView"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="0.75"
+        android:padding="@dimen/input_field_margin"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scrolling_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text="Instant Gold Loan"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/scrolling_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text="DroorStep/No cibil/No salary slips"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+<ImageView
+    android:id="@+id/scrolling_img"
+    android:layout_width="0dp"
+    android:layout_weight="0.25"
+    android:layout_toEndOf="@+id/scrollView"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/scrolling_img1"></ImageView>
+</LinearLayout>

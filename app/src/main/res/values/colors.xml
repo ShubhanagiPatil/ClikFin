@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#233dd4</color>
+    <color name="colorPrimaryDark">#3550a8</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="off_white">#f8f8ff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#dfdfdf</color>
+
+    <color name="background_start">#053171</color>
+    <color name="background_end">#0943ae</color>
+    <color name="background">#f2f5fa</color>
+
+    <color name="slider_inactive_dot_start_color">#edf2fa</color>
+    <color name="slider_inactive_dot_end_color">#cbd9fd</color>
+    <color name="slider_active_dot_start_color">#0061fb</color>
+    <color name="slider_active_dot_end_color">#002277</color>
+
+    <color name="boarder_color">#e7e9f1</color>
+    <color name="border_color">#31327f</color>
+    <color name="input_color">#3e4750</color>
+
+    <color name="splash_color">#2d55a5</color>
+    <color name="instant_loan_color">#2d2d2d</color>
+    <color name="text_color">#7f7f7f</color>
+    <color name="error">#ef0b31</color>
+    <color name="incred_background">#eeeeee</color>
+
+
+    //color not used
+    <color name="light_primary">#FFCDA9FF</color>
+    <color name="scroll_background">#c9e8fb</color>
+</resources>

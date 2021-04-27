@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" android:useLevel="true"
+    android:dither="true">
+
+    <size
+        android:width="@dimen/slider_dots_size"
+        android:height="@dimen/slider_dots_size"/>
+
+    <gradient
+        android:startColor="@color/slider_active_dot_start_color"
+        android:endColor="@color/slider_active_dot_end_color"
+        android:angle="180"
+    />
+</shape>

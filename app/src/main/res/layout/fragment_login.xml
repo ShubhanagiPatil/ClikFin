@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/company_logo"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/double_general_padding_margin"
+        android:src="@drawable/ic_clickfin_toolbar" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_container"
+        android:layout_marginTop="100dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+       android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:layout_below="@+id/company_logo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/general_padding_margin">
+
+            <EditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_margin"
+                android:drawableStart="@drawable/contact_number_icon"
+                android:drawablePadding="@dimen/general_padding_margin"
+                android:hint="@string/contact_number"
+                android:textColorHint="#1ba6dd"
+                android:inputType="number"
+                android:focusable="true"
+                android:maxLength="10"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/small_text"
+                android:textStyle="normal"
+                android:autofillHints="@string/contact_number" />
+
+            <TextView
+                android:id="@+id/contact_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_number"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_below="@id/contact_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_margin"
+                android:drawableStart="@drawable/password_icon"
+                android:drawablePadding="@dimen/general_padding_margin"
+                android:hint="@string/password"
+                android:textColorHint="#1ba6dd"
+                android:focusable="true"
+                android:imeOptions="actionDone"
+                android:textSize="@dimen/small_text"
+                android:autofillHints="@string/password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/password_error"
+                android:layout_below="@id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_below="@id/password_error"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/login"
+                android:background="@drawable/round_button"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/login"
+                android:layout_marginTop="@dimen/general_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="@dimen/small_text"
+                android:textColor="#1ba6dd"
+                android:text="@string/forgot_password"
+                />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/forgot_password"
+                android:layout_marginTop="@dimen/general_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="@dimen/small_text"
+                android:textColor="#1ba6dd"
+                android:text="@string/register_now"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:textSize="@dimen/text_size"
+        android:padding="@dimen/input_field_padding"
+        android:background="@color/background"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+       android:layout_below="@+id/login_container"
+        android:lineSpacingExtra="2.4sp"
+        android:text="@string/by_proceeding_you_agree_to_clikfin_privacy_policy_and_authorize"/>
+</RelativeLayout>

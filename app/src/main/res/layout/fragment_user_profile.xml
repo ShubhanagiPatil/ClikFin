@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_margin="@dimen/input_field_margin"
+    android:elevation="5dp"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input_field_padding"
+        android:layout_marginTop="@dimen/input_field_padding"
+        android:layout_marginRight="@dimen/input_field_padding"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layBasicInfo"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic Information"
+                android:textColor="@color/splash_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgBasicInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/user_profile" />
+
+            <ImageView
+                android:id="@+id/imgIsBasicInfoUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layProfessionalInfo"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:padding="@dimen/input_field_padding"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Professional Information"
+                android:textColor="@color/splash_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgProfessionalInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_professional" />
+
+            <ImageView
+                android:id="@+id/imgIsProfessionalInfoUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input_field_padding"
+        android:layout_marginTop="@dimen/input_field_padding"
+        android:layout_marginRight="@dimen/input_field_padding"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layReferences"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="References"
+                android:textColor="@color/splash_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgReferenceInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_references" />
+
+            <ImageView
+                android:id="@+id/imgIsReferenceInfoUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/layBankDetails"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_weight="0.5"
+
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Details"
+                android:textColor="@color/splash_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgBankDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_bank" />
+
+            <ImageView
+                android:id="@+id/imgIsBankDetailsUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/input_field_padding"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layDocuments"
+            android:layout_width="wrap_content"
+
+            android:layout_height="120dp"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:textColor="@color/splash_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgDocumentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_documents" />
+
+            <ImageView
+                android:id="@+id/imgIsDocumentInfoUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView android:id="@+id/loanStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="@dimen/input_field_margin"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:textColor="@color/splash_color"
+        android:padding="@dimen/input_field_padding"/>
+</LinearLayout>

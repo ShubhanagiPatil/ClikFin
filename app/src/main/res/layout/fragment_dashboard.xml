@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:padding="@dimen/input_field_padding"
+        android:textSize="@dimen/small_text"/>
+
+    <LinearLayout
+        android:id="@+id/apply_loan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/tv_apply_loan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/apply_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/path_46018"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:paddingBottom="@dimen/input_field_margin"
+                android:src="@drawable/group_28"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cibil_check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/ob_desc1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/check_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/ic_cibil"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refer_and_earn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/input_field_margin"
+        android:layout_marginRight="@dimen/input_field_margin"
+        android:layout_marginTop="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation"
+        android:orientation="horizontal"
+        android:padding="@dimen/input_field_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:elevation="@dimen/elevation"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/input_field_margin"
+                android:text="@string/refer_n_earn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/round_button"
+                android:text="@string/refer_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/input_field_margin"
+                android:paddingTop="@dimen/input_field_margin"
+                android:paddingRight="@dimen/input_field_margin"
+                android:src="@drawable/refer_and_earn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

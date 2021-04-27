@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/input_field_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/basic_view"
+        android:background="@drawable/border"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/input_field_margin">
+
+        <!-- <include
+             layout="@layout/fragment_card_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             />-->
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/input_field_margin"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_edit" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_first_name"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/firstName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin_left"
+                    android:text="@string/tv_middle_name"
+                    android:textColor="@color/splash_color"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>-->
+
+        <!--  <EditText
+              android:id="@+id/edMiddleName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:background="@drawable/border"
+              android:elevation="5dp"
+              android:hint="@string/ed_middle_name_as_pan"
+              android:inputType="textPersonName"
+              android:padding="@dimen/input_field_padding"
+              android:textSize="@dimen/small_text" />-->
+
+        <EditText
+            android:id="@+id/edMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_middle_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/middleName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_last_name"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <!--<EditText
+            android:id="@+id/edLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_last_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+-->
+
+
+        <EditText
+            android:id="@+id/edLastName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_last_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/lastName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_father_name"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <!--  <EditText
+              android:id="@+id/edFatherName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/border"
+              android:elevation="5dp"
+              android:hint="@string/ed_father_name_as_pan"
+              android:inputType="textPersonName"
+              android:padding="@dimen/input_field_padding"
+              android:textSize="@dimen/small_text" />-->
+
+
+        <EditText
+            android:id="@+id/edFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_father_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/fatherName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_edit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/contact_number"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:drawableEnd="@drawable/ic_call"
+            android:elevation="5dp"
+            android:hint="@string/ed_contact_no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/contactNo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin_left"
+                    android:text="@string/tv_email_id"
+                    android:textColor="@color/splash_color"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_email_id"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/emailIdError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_aadhar_card"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edAadharCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_aadhar_card"
+            android:inputType="number"
+            android:maxLength="12"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/aadharCardError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_pan_card"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>
+ -->
+        <EditText
+            android:id="@+id/edPanCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_pan_card_no"
+            android:inputType="text"
+            android:maxLength="10"
+            android:nextFocusDown="@id/edMotherName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/panCardError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:fontFamily="More Fonts..."
+            android:text="@string/tv_gender"
+            android:textSize="@dimen/small_text" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_field_padding">
+
+
+            <RadioButton
+                android:id="@+id/rdMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:checked="true"
+                android:text="@string/rd_male"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+
+            <RadioButton
+                android:id="@+id/rdFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:text="@string/rd_female"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/genderError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_dob" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_DOB"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:drawableEnd="@drawable/ic_dob"
+            android:elevation="5dp"
+            android:hint="@string/ed_DOB"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/DOBError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_user" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_educational_qualification"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerEducationalQualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/educationalQualificationError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_sms" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_marital_status"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:text="@string/tv_marital_status"
+            android:textSize="@dimen/small_text" />
+
+        <RadioGroup
+            android:id="@+id/rgMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:checkedButton="@+id/rdUnmarried"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_field_padding"
+            android:tooltipText="@string/tv_marital_status">
+
+
+            <RadioButton
+                android:id="@+id/rdUnmarried"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:checked="true"
+                android:text="@string/rd_unmarried"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+
+            <RadioButton
+                android:id="@+id/rdMarried"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:text="@string/rd_married"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+
+            <RadioButton
+                android:id="@+id/rdOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:text="@string/rd_other"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/maritalError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_edit" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_mother_name"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <!--  <EditText
+              android:id="@+id/edMotherName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/border"
+              android:elevation="5dp"
+              android:hint="@string/ed_mother_name_as_pan"
+              android:inputType="textPersonName"
+              android:padding="@dimen/input_field_padding"
+              android:textSize="@dimen/small_text" />-->
+
+
+        <EditText
+            android:id="@+id/edMotherName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_mother_name_as_pan"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/motherName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:id="@+id/laySpouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--   <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_edit" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/text_margin_left"
+                       android:text="@string/tv_spouse_name"
+                       android:textColor="@color/splash_color"
+                       android:textSize="@dimen/small_text" />
+               </LinearLayout>-->
+
+            <!--  <EditText
+                  android:id="@+id/edSpouseName"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/border"
+                  android:elevation="5dp"
+                  android:hint="@string/ed_spouse_name_as_pan"
+                  android:inputType="textPersonName"
+                  android:padding="@dimen/input_field_padding"
+                  android:textSize="@dimen/small_text" />-->
+
+
+            <EditText
+                android:id="@+id/edSpouseName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAutofill="no"
+                android:background="@drawable/border"
+                android:elevation="@dimen/elevation"
+                android:hint="@string/ed_spouse_name_as_pan"
+                android:inputType="textPersonName"
+                android:padding="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/small_text" />
+
+
+            <TextView
+                android:id="@+id/spouseName_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_field_margin"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_sms" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_current_residency"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:text="@string/tv_current_residency"
+            android:textSize="@dimen/small_text" />
+
+        <RadioGroup
+            android:id="@+id/rgCurrentResidency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_field_padding">
+
+
+            <RadioButton
+                android:id="@+id/rdRented"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:checked="true"
+                android:text="@string/rd_rented"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+
+            <RadioButton
+                android:id="@+id/rdOwned"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/splash_color"
+                android:text="@string/rd_owned"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/currentResidencyError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/border"
+              android:elevation="5dp"
+              android:orientation="horizontal">
+
+              &lt;!&ndash; <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_edit" />
+   &ndash;&gt;
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_no_of_years_staying"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />-->
+
+        <EditText
+            android:id="@+id/noOfYearsStayingYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_no_of_years_staying"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <!-- </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/noOfYearsStayingError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_present_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/input_field_margin"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_installed" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_line1"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edCurrentAddressLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_left"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_line1"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/currentAddressLine1Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_installed" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_line2"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edCurrentAddressLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_line2"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/currentAddressLine2Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_land_mark"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edCurrentAddressLandMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_land_mark"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/currentAddressLandMarkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_installed" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_city"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edCurrentAddressCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_city"
+            android:importantForAutofill="no"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/currentAddressCityError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_state"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerCurrentAddressState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/currentAddressStateError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_pin"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edCurrentAddressPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_pin"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/currentAddressPinCodeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_user" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_address_proof"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+
+
+             <!-- <Spinner
+                  android:id="@+id/spinnerAddressProof"
+                 android:focusable="false"
+                  android:background="@drawable/border"
+                  android:elevation="5dp"
+                  android:padding="@dimen/input_field_padding"
+                  android:text="Select Address Proof"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerAddressProof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+       <!-- <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <AutoCompleteTextView
+                android:id="@+id/spinnerAddressProof"
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:singleLine="true"
+                android:hint="@string/select_address_proof"
+                android:layout_height="match_parent"
+                android:padding="@dimen/input_field_padding" />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:id="@+id/addressProofError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPermanentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_permanent_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chkSameAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvPermanentAddress"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:layout_toEndOf="@+id/tvPermanentAddress"
+                android:text="@string/ch_same_address"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/text_size" />
+
+        </RelativeLayout>
+
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/input_field_margin"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_installed" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/text_margin_left"
+                   android:text="@string/tv_line1"
+                   android:textColor="@color/splash_color"
+                   android:textSize="@dimen/small_text" />
+           </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPermanentAddressLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_field_margin"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="5dp"
+            android:hint="@string/ed_line1"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/permanentAddressLine1Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_installed" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/text_margin_left"
+                  android:text="@string/tv_line2"
+                  android:textColor="@color/splash_color"
+                  android:textSize="@dimen/small_text" />
+          </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPermanentAddressLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_line2"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/permanentAddressLine2Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_land_mark"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPermanentAddressLandMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_land_mark"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/permanentAddressLandMarkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sms" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_left"
+                android:text="@string/tv_city"
+                android:textColor="@color/splash_color"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>-->
+
+
+        <EditText
+            android:id="@+id/edPermanentAddressCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_city"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/permanentAddressCityError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_sms" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_state"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:padding="@dimen/input_field_padding">
+
+            <Spinner
+                android:id="@+id/spinnerPermanentAddressState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/permanentAddressStateError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_installed" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/text_margin_left"
+                 android:text="@string/tv_pin"
+                 android:textColor="@color/splash_color"
+                 android:textSize="@dimen/small_text" />
+         </LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edPermanentAddressPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:hint="@string/ed_pin"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/permanentAddressPinCodeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btnPersonalInfoNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/double_general_padding_margin"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:text="@string/btn_next"
+            android:enabled="false"
+            android:textColor="@color/splash_color" />
+    </LinearLayout>
+
+
+</ScrollView>

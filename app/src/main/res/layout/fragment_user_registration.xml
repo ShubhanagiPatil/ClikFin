@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:background="@drawable/ic_signup"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/register_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:background="@drawable/border"
+        android:elevation="@dimen/elevation">
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/general_padding_margin"
+            android:paddingBottom="@dimen/general_padding_margin">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:autofillHints="@string/full_name"
+                android:background="@drawable/border_dark_blue"
+                android:focusable="true"
+                android:hint="@string/full_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/name_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:paddingStart="@dimen/input_field_padding"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/contact_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:autofillHints="@string/contact_number"
+                android:background="@drawable/border_dark_blue"
+                android:focusable="true"
+                android:hint="@string/contact_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/contact_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:paddingStart="@dimen/input_field_padding"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:autofillHints="@string/email_id"
+                android:background="@drawable/border_dark_blue"
+                android:focusable="true"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/email_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:paddingStart="@dimen/input_field_padding"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/border_dark_blue"
+                android:focusable="true"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/password_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:paddingStart="@dimen/input_field_padding"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:background="@drawable/border_dark_blue"
+                android:focusable="true"
+                android:hint="@string/re_enter_password"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="@dimen/input_field_padding"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/re_password_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_padding_margin"
+                android:layout_marginRight="@dimen/general_padding_margin"
+                android:paddingStart="@dimen/input_field_padding"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/general_padding_margin"
+        android:background="@drawable/round_button"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text" />
+
+</RelativeLayout>

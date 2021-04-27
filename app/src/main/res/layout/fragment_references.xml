@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/input_field_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/input_field_margin"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/input_field_padding"
+            android:text="@string/tv_reference1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edRef1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_name"
+            android:importantForAutofill="no"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref1Name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef1ContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:importantForAutofill="no"
+            android:hint="@string/ed_contact_no"
+            android:drawableEnd="@drawable/ic_call"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref1ContactNo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef1RelationShip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_relationship"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref1Relationship_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef1CityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_city"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref1CityName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/input_field_padding"
+            android:text="@string/tv_reference2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edRef2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref2Name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef2ContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@drawable/border"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_contact_no"
+            android:drawableEnd="@drawable/ic_call"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref2ContactNo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef2RelationShip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_relationship"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref2Relationship_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edRef2CityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:importantForAutofill="no"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/ed_city"
+            android:inputType="text"
+            android:padding="@dimen/input_field_padding"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/ref2CityName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_field_margin"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btnReferenceInfoNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/double_general_padding_margin"
+            android:background="@drawable/custom_rect"
+            android:elevation="@dimen/elevation"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
